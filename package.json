@@ -1,0 +1,52 @@
+{
+  "name": "authjs-loginllama",
+  "version": "0.0.0",
+  "description": "Score every Auth.js (NextAuth) sign-in with LoginLlama and refuse the risky ones",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test src/*.test.ts",
+    "prepublishOnly": "pnpm test && pnpm build"
+  },
+  "keywords": [
+    "authjs",
+    "auth.js",
+    "next-auth",
+    "nextauth",
+    "credentials",
+    "login",
+    "security",
+    "account-takeover",
+    "credential-stuffing",
+    "risk-scoring",
+    "loginllama"
+  ],
+  "author": "Josh Ghent <me@joshghent.com>",
+  "homepage": "https://loginllama.app/for-authjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshghent/authjs-loginllama.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "peerDependencies": {
+    "@auth/core": ">=0.40.0"
+  },
+  "devDependencies": {
+    "@auth/core": "^0.41.3",
+    "@types/node": "^22.20.5",
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "pnpm@11.10.0"
+}
