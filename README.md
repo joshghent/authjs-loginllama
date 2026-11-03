@@ -6,7 +6,7 @@ refuses the dangerous ones before a session exists.
 Auth.js checks the password. It does not ask whether the login looks right. A
 correct password from a Tor exit node, a country the user has never been to, or
 a bot that has just tried four thousand other accounts still gets a session.
-This package asks [LoginLlama](https://loginllama.app) first.
+This package asks [LoginLlama](https://loginllama.app/?utm_source=npm&utm_medium=readme&utm_campaign=authjs-loginllama) first.
 
 ```bash
 npm install authjs-loginllama
@@ -34,7 +34,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
 ```
 
 Set `LOGINLLAMA_API_KEY` in your environment. The first 1,000 checks are free:
-[get a key](https://loginllama.app/signup).
+[get a key](https://loginllama.app/signup?utm_source=npm&utm_medium=readme&utm_campaign=authjs-loginllama).
 
 It works the same with SvelteKit, Express and anything else on `@auth/core`.
 
@@ -50,7 +50,7 @@ the sign-in page with `?code=risky_sign_in`.
 When `authorize` returns `null` the package reports a failed attempt. That is
 how LoginLlama spots someone guessing passwords, and how it learns each user's
 usual devices and places. Each attempt shows up in the
-[dashboard](https://loginllama.app/account/dashboard) with its score and
+[dashboard](https://loginllama.app/account/dashboard?utm_source=npm&utm_medium=readme&utm_campaign=authjs-loginllama) with its score and
 reasons.
 
 If LoginLlama is down or takes longer than two seconds, the sign-in goes
@@ -93,9 +93,9 @@ package uses `fetch` and has no other dependencies.
 
 ## Links
 
-- [LoginLlama for Auth.js](https://loginllama.app/for-authjs)
-- [LoginLlama docs](https://loginllama.app/docs)
-- [Free IP reputation checker](https://loginllama.app/tools/ip-reputation-checker)
+- [LoginLlama for Auth.js](https://loginllama.app/for-authjs?utm_source=npm&utm_medium=readme&utm_campaign=authjs-loginllama)
+- [LoginLlama docs](https://loginllama.app/docs?utm_source=npm&utm_medium=readme&utm_campaign=authjs-loginllama)
+- [Free IP reputation checker](https://loginllama.app/tools/ip-reputation-checker?utm_source=npm&utm_medium=readme&utm_campaign=authjs-loginllama)
 
 ## Licence
 
