@@ -93,6 +93,7 @@ package uses `fetch` and has no other dependencies.
 
 ## Links
 
+- [Step-by-step guide for Auth.js](https://loginllama.app/blog/authjs-login-risk-scoring?utm_source=npm&utm_medium=readme&utm_campaign=authjs-loginllama)
 - [LoginLlama for Auth.js](https://loginllama.app/for-authjs?utm_source=npm&utm_medium=readme&utm_campaign=authjs-loginllama)
 - [LoginLlama docs](https://loginllama.app/docs?utm_source=npm&utm_medium=readme&utm_campaign=authjs-loginllama)
 - [Free IP reputation checker](https://loginllama.app/tools/ip-reputation-checker?utm_source=npm&utm_medium=readme&utm_campaign=authjs-loginllama)
