@@ -63,7 +63,8 @@ export const withLoginLlama = (
       headers: {
         'Content-Type': 'application/json',
         Accept: 'application/vnd.api+json',
-        'X-API-KEY': apiKey!
+        'X-API-KEY': apiKey!,
+        'X-LOGINLLAMA-SOURCE': 'authjs-loginllama'
       },
       body: JSON.stringify({
         identity_key: identity,

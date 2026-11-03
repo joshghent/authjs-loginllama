@@ -12,8 +12,10 @@ let calls: {
   ip_address?: string;
 }[] = [];
 const realFetch = globalThis.fetch;
+let source: string | null = null;
 globalThis.fetch = async (input, init) => {
   if (String(input).startsWith('https://loginllama.app/')) {
+    source = new Headers(init?.headers).get('x-loginllama-source');
     if (score === 'down') throw new TypeError('fetch failed');
     calls.push(JSON.parse(String(init?.body)));
     return Response.json({
@@ -119,4 +121,9 @@ test('refuses to start without an API key', () => {
   } finally {
     if (saved) process.env.LOGINLLAMA_API_KEY = saved;
   }
+});
+
+test('tells LoginLlama which integration sent the check', async () => {
+  await signIn();
+  assert.equal(source, 'authjs-loginllama');
 });
