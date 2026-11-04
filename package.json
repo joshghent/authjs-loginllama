@@ -1,6 +1,6 @@
 {
   "name": "authjs-loginllama",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Score every Auth.js (NextAuth) sign-in with LoginLlama and refuse the risky ones",
   "type": "module",
   "exports": {
